@@ -1,0 +1,25 @@
+plugins {
+	id 'org.springframework.boot' version '2.4.4'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'java'
+}
+
+group = 'space.eignatik'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation group: 'org.testng', name: 'testng', version: '7.4.0'
+	testImplementation group: 'org.mockito', name: 'mockito-core', version: '3.8.0'
+	testImplementation group: 'com.google.truth', name: 'truth', version: '1.1.2'
+}
+
+test {
+	useTestNG()
+}
