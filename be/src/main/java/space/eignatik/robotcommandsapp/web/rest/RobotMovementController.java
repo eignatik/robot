@@ -1,9 +1,7 @@
 package space.eignatik.robotcommandsapp.web.rest;
 
 import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 import space.eignatik.robotcommandsapp.domain.Robot;
 import space.eignatik.robotcommandsapp.exceptions.IncorrectScriptingException;
@@ -19,11 +17,16 @@ public class RobotMovementController {
     }
 
     @PostMapping(value = "/apply-script")
-    public Robot applyScript(@RequestBody String script) {
+    public @ResponseBody Robot applyScript(@RequestBody String script) {
         try {
             return robotCommandService.applyScript(script);
         } catch (IncorrectScriptingException e) {
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST, e.getMessage(), e);
         }
+    }
+
+    @GetMapping(value = "/health")
+    public String health() {
+        return "UP";
     }
 }
