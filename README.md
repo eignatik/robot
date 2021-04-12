@@ -12,3 +12,7 @@ DONE:
 TODO: 
 1. Implement robot positon rendering mechanizm from the server response.
 1. Add "reset" button to revert robot position to 0:0
+
+
+# UI
+![Screen](https://github.com/eignatik/robot/blob/main/robot-app.png)
