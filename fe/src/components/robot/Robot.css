@@ -1,0 +1,41 @@
+div.robot {
+    position: relative;
+}
+
+img {
+    width: 25px;
+}
+
+.arrow {
+    width: 0; 
+    height: 0; 
+    position: absolute;
+}
+
+.arrow.arrow-up {
+    top: -10px; left: 18px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid rgb(80, 116, 192);
+  }
+  
+  .arrow.arrow-down {
+    bottom: -10px; left: 18px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid rgb(80, 116, 192);
+  }
+  
+  .arrow.arrow-right {
+    top: 8px; right: 0px;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid rgb(80, 116, 192);
+  }
+  
+  .arrow.arrow-left {
+    top: 8px; left: 0px;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent; 
+    border-right:5px solid rgb(80, 116, 192); 
+  }

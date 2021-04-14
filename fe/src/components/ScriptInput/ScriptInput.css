@@ -1,0 +1,54 @@
+.script-input input[type="submit"] {
+    transition: .2s;
+    background-color: rgb(37, 36, 49); 
+    border: 1px solid #2c273b;
+    color: #fff;
+    font-weight: bolder;
+    border-radius: 5px;
+    padding: 12px;
+    outline: none;
+    cursor: pointer;
+}
+
+.script-input input[type="submit"]:hover {
+    transition: .2s;
+    background-color: rgb(46, 45, 61);
+}
+
+.script-input textarea {
+    border-radius: 5px; 
+    padding: 5px; 
+    border: 1px solid #5a5a5a;
+    background-color: rgb(37, 42, 51);
+    width: 486px;
+    height: 260px;
+    font-size: 14pt;
+    font-family: 'Courier New', Courier, monospace;
+    color:rgb(129, 129, 129);
+    resize: none;
+}
+
+.script-input > div:last-child {
+    float: right;
+}
+
+.supported-commands {
+    margin-top: 40px;
+    padding-left: 12px;
+    border-left: 1px solid #aaa;
+}
+
+.supported-commands li {
+    margin-bottom: 15px;
+}
+
+.error-log {
+    max-width: 300px;
+    margin-top: 15px;
+    padding: 10px; 
+    background-color: rgb(53, 53, 66);
+}
+
+.error-message {
+    color: rgb(179, 92, 92);
+}
